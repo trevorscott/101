@@ -47,6 +47,10 @@ class Index extends React.Component {
         text-transform: uppercase;
       }
 
+      h1 {
+        font-family: Consolas;
+      }
+
       .title {
         text-align:center;
       }
