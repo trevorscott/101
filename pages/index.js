@@ -36,6 +36,11 @@ class Index extends React.Component {
           src: url('static/HelveticaNeue.ttc');
         }
 
+      @font-face {
+          font-family: consola;
+          src: url('/static/CONSOLA.TTF');
+        }
+
       h1,h2,h3 {
         text-decoration:none;
         color:white;
@@ -48,7 +53,7 @@ class Index extends React.Component {
       }
 
       h1 {
-        font-family: Consolas;
+        font-family: consola;
       }
 
       .title {
