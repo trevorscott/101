@@ -2,13 +2,17 @@ import Header from './Header'
 import Footer from './Footer'
 import Head from 'next/head';
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-142999548-2');
-ReactGA.pageview(window.location.pathname + window.location.search)
-
 const Layout = props => (
   <div>
     <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142999548-2"></script>
+      <script dangerouslySetInnerHTML={{__html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-142999548-2');`}}>
+        
+      </script>
       <title>101</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet"/>
