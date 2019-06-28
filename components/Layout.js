@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-142999548-2');
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 const Layout = props => (
   <div>
