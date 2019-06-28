@@ -2,6 +2,9 @@ import Header from './Header'
 import Footer from './Footer'
 import Head from 'next/head';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-142999548-2');
+
 const Layout = props => (
   <div>
     <Head>
