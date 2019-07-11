@@ -8,7 +8,7 @@ const PostLink = props => (
     <Link as={`/blog/published/${props.id}`} href={`/post?id=${props.id}`}>
       <div>
         <a style={{cursor:"pointer"}}> 
-          <h2 style={{lineHeight:0,fontWeight: "bolder",fontFamily: "Lucida Grande"}}>{props.title}</h2>
+          <h2 style={{color:"black",lineHeight:0,fontWeight: "bolder",fontFamily: "Lucida Grande"}}>{props.title}</h2>
           <p style={{
             color:"rgba(0,0,0,.54)",
             fill:"rgba(0,0,0,.54)",
@@ -101,6 +101,7 @@ class Blog extends React.Component {
             
             h2 {
               line-height: 0;
+              color:black;
             } 
 
             ul {
