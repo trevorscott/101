@@ -15,6 +15,9 @@ const Layout = props => (
       </script>
       <title>101</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="Sustainability in the apparel and fashion industries."/>
+      <meta name="keywords" content="Sustainable, Sustainability, Fasion, Apparel"/>
+      <meta name="author" content="Spence Scott">
       <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet"/>
     </Head>
