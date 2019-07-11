@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
+    "dev": "node server/index.js",
     "build": "next build",
     "start": "NODE_ENV=production node index.js"
   },
@@ -13,10 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "gray-matter": "^4.0.2",
     "next": "^8.1.0",
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
-    "react-pdf": "^4.1.0"
+    "react-pdf": "^4.1.0",
+    "remark-parse": "^6.0.3"
   }
 }

@@ -28,15 +28,20 @@ const homeStyle = {
 <Link href="https://github.com/trevorscott">
   <a style={linkStyle} target="_blank">GitHub</a>
 </Link>
+<div id="Hamburger">
+        <Hamburger/>  
+      </div>
 */
 
 const Header = (props) => (
   <div id="Header">
-      <div id="Hamburger">
-        <Hamburger/>  
-      </div>
       <div id="nav">
-        <h3>101</h3>
+        <Link activeClassName="active" href="/index">
+          <a style={linkStyle}>101</a>
+        </Link>
+        <Link activeClassName="active" href="/blog">
+          <a style={linkStyle}>Blog</a>
+        </Link>
       </div>
     <style jsx>{`
 

@@ -16,12 +16,12 @@ const Layout = props => (
       <title>101</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="Sustainability in the apparel and fashion industries."/>
-      <meta name="keywords" content="Sustainable, Sustainability, Fasion, Apparel"/>
-      <meta name="author" content="Spence Scott">
+      <meta name="keywords" content="sustainable fashion 101, sustainable apparel 101, sustainable fashion and apparel 101, introduction to sustainable fashion, introduction to sustainable apparel, how can i be more sustainable, Sustainable Fashion, Sustainable Apparel Guide, Sustainability Guide, Sustainable Fashion Guide, Sustainable Fashion info, Sustainable Apparel info, how can i be sustainable, Sustainable, Sustainability, Fashion, Apparel"/>
+      <meta name="author" content="Spence Scott"/>
       <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet"/>
     </Head>
-
+      <Header/>
       <div id="content">
         {props.children}
       </div>
