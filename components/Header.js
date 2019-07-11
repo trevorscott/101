@@ -31,26 +31,25 @@ const homeStyle = {
 <div id="Hamburger">
         <Hamburger/>  
       </div>
+
+      <Link activeClassName="active" href="/index">
+          <a style={linkStyle}></a>
+        </Link>
+        <Link activeClassName="active" href="/blog">
+          <a style={linkStyle}>Blog</a>
+        </Link>
 */
 
 const Header = (props) => (
   <div id="Header">
       <div id="nav">
+        <div id="navContainer">
         <Link activeClassName="active" href="/index">
           <a style={linkStyle}>101</a>
         </Link>
-        <Link activeClassName="active" href="/blog">
-          <a style={linkStyle}>Blog</a>
-        </Link>
+        </div>
       </div>
     <style jsx>{`
-
-        .active {
-          background: rgba(255,255,255,.9);
-          color: #1d1919 !important;
-          padding: 5px 3px 3px 5px;
-          border-radius: 2px;
-        }
 
         #Hamburger{
           height: 70px;
@@ -64,19 +63,28 @@ const Header = (props) => (
           padding:1em;
         }
 
+        #navContainer{
+          max-width:740px;
+          margin:0px auto;
+          text-align:left;
+        }
+
         #nav h3 {
           color:white;
         }
 
+        #nav h2 {
+          margin: 0;
+          text-align: left;
+          color: white;
+          font-size:2em;
+        }
+
         #nav a {
-          font-size: 11px;
-          line-height: 1.5em;
-          text-transform: uppercase;
           text-decoration: none;
-          letter-spacing: .3em;
-          font-weight: 300;
-          font-style: normal;
-          list-style-type: none;
+          font-size:2em;
+          color: white;
+        }
       }`}</style>
   </div>
 )

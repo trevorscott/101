@@ -54,7 +54,7 @@ class Post extends React.Component {
               
               <div className="markdown">
                 <div className="postIntro">
-                  <h1>{this.state.title}</h1>
+                  <h2>{this.state.title}</h2>
                   <p className="description">{this.state.description}</p>
                   <p className="postInfo">
                     {this.state.author} <br/>

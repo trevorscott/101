@@ -46,11 +46,10 @@ const Layout = props => (
           margin:0;
           padding:0;
           padding-bottom:60px;
-          background:#e51696;
+          background:#white;
         }
 
         h1,h2,h3 {
-          color:white;
           text-decoration:none;
         }
 
@@ -80,7 +79,6 @@ const Layout = props => (
         #content {
           min-height:100%;
           position:relative;
-          padding:7em 2em 2em 2em;
         }
 
         ul {
@@ -90,18 +88,6 @@ const Layout = props => (
         li {
           list-style: none;
           margin: 5px 0;
-        }
-
-        footer a, #nav a, #header a {
-          text-decoration: none;
-          font-size: 11px;
-          line-height: 1.5em;
-          text-transform: uppercase;
-          text-decoration: none;
-          letter-spacing: .3em;
-          font-weight: 300;
-          font-style: normal;
-          list-style-type: none;
         }
 
         a:hover {

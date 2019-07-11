@@ -9,17 +9,10 @@ const Page = props => (
             margin:0px auto;
             text-align:left;
             color:rgba(0,0,0,.84);
-            background:#fff;
             border-radius:1em;
             padding-top:1em;
+            padding:1em;
           }
-
-          @media (max-width:415px) {
-            #Page {
-              padding:0;
-            }
-          }
-
 
     `}</style>
   </div>
