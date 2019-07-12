@@ -6,7 +6,7 @@ export default function About() {
     <Layout>
       <Page>
         <p>
-          101 is under construction. Check back in soon.
+          Coming Soon!
         </p>
       </Page>
     </Layout>
