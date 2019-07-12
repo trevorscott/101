@@ -44,7 +44,7 @@ const Header = (props) => (
   <div id="Header">
       <div id="nav">
         <div id="navContainer">
-          <Link activeClassName="active" href="/index">
+          <Link activeClassName="active" href="/">
             <a style={linkStyle}>101</a>
           </Link>
           <span id="navRight">
