@@ -9,4 +9,4 @@ pdf: /static/fashion/Fashion_101.pdf
 ---
 
 
-Hello world! This is my first blog post. Its about sustainable fashion.
+The fashion industry is a major global polluter and contributor to climate change. Fashion is a consumer-facing industry that gives us a unique opportunity to influence the wide array of industries connected to its supply chain. 
