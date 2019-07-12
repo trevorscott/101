@@ -3,6 +3,33 @@ import Link   from 'next/link'
 import apiURL from '../utils/api-url.js'
 import Page from '../components/Page.js'
 
+const PostLink = props => (
+  <li>
+    <Link as={`/blog/published/${props.id}`} href={`/post?id=${props.id}`}>
+      <div>
+        <a style={{cursor:"pointer"}}> 
+          <h3 style={{color:"black",lineHeight:0,fontWeight: "bolder",fontFamily: "Lucida Grande"}}>{props.title}</h3>
+          <p style={{
+            color:"rgba(0,0,0,.54)",
+            fill:"rgba(0,0,0,.54)",
+            fontFamily: "Lucida Grande",
+            padding:"0",
+            margin:"0"}}>
+            {props.description}
+          </p>
+          <p style={{
+            padding:"0",
+            marginTop:"10px",
+            fontSize: ".85em"
+          }}>
+            {props.author} {props.date}
+          </p>
+        </a>
+        <hr/>
+      </div>
+    </Link>
+  </li>
+)
 
 class Blog extends React.Component {
   constructor(props){
@@ -54,27 +81,12 @@ class Blog extends React.Component {
     }) 
   }
 
-  renderGridItem(postData) {
-    if (postData.data.pdf != undefined) {
-      return (
-        <a href={postData.data.pdf} style={{textDecoration:"none", color: "rgba(0,0,0,.84)"}}>
-          <div className="gridItem">
-            <img src={postData.data.image} style={{width:"100%"}}/>
-            <h3>{postData.data.title}</h3>
-            <p>{postData.data.description}</p>
-          </div>
-        </a>
-      )
-    } else {
-      return (
-        <div className="gridItem">
-          <img src={postData.data.image} style={{width:"100%"}}/>
-          <h3>{postData.data.title}</h3>
-          <p>{postData.data.description}</p>
-        </div>
-      )
-    }
-  }
+  /*
+                 <PostLink id={postData.fileName} 
+                        title={postData.data.title}
+                        author={postData.data.author}
+                        date={postData.data.date} 
+                        description={postData.data.description}/> */
 
   render() { 
     return(
@@ -84,7 +96,13 @@ class Blog extends React.Component {
             {this.state.blogPostData.map((postData)=>
               postData.data.published == true ?
               <li>
-                {this.renderGridItem(postData)}
+                <Link as={`/blog/published/${postData.fileName}`} href={`/post?id=${postData.fileName}`}>
+                  <div>
+                    <img src={postData.data.image}/>
+                    <h3>{postData.data.title}</h3>
+                    <p>{postData.data.description}</p>
+                  </div>
+                </Link>
               </li>
               : null
             )}
@@ -100,6 +118,11 @@ class Blog extends React.Component {
             li{
               border-radius: .5rem;
               height: 100%;
+            }
+
+
+            img{
+              width:100%;
             }
 
             @font-face {

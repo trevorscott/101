@@ -44,10 +44,19 @@ const Header = (props) => (
   <div id="Header">
       <div id="nav">
         <div id="navContainer">
-        <Link activeClassName="active" href="/index">
-          <a style={linkStyle}>101</a>
-        </Link>
+          <Link activeClassName="active" href="/index">
+            <a style={linkStyle}>101</a>
+          </Link>
+          <span id="navRight">
+            <Link activeClassName="active" href="/about">
+              <a style={linkStyle}>About</a>
+            </Link>
+            <Link activeClassName="active" href="/contact">
+              <a style={linkStyle}>Contact</a>
+            </Link>
+          </span>
         </div>
+        
       </div>
     <style jsx>{`
 
@@ -67,6 +76,10 @@ const Header = (props) => (
           max-width:740px;
           margin:0px auto;
           text-align:left;
+        }
+
+        #navRight {
+          float:right;
         }
 
         #nav h3 {

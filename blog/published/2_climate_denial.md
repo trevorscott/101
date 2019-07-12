@@ -1,6 +1,6 @@
 ---
 title: Climate Denial
-description: Ya'll in denial, bitches.
+description: Coming Soon.
 author: Spencer Scott
 date: July 11th, 2019
 published: true

@@ -54,10 +54,6 @@ const Layout = props => (
         }
 
         h1 {
-          font-size:20vw;
-        }
-
-        h2 {
           font-size:10vw;
         }
 
