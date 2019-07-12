@@ -5,10 +5,22 @@ export default function About() {
   return (
     <Layout>
       <Page>
-        <p>
-          Coming Soon!
-        </p>
+        <div align="center" className="aboutWrapper">
+			<img src="/static/About_portrait.png" alt="Spencer R. Scott"/>
+			<p>
+	          Coming Soon!
+	        </p>
+        </div>
       </Page>
+      <style jsx global>{`
+
+      	img {
+      		max-width:400px;
+      		margin:0 auto;
+      	}
+
+
+  	  `}</style>
     </Layout>
   )
 }
