@@ -6,7 +6,7 @@ export default function About() {
     <Layout>
       <Page>
         <div align="center" className="aboutWrapper">
-			<img src="/static/About_portrait.png" alt="Spencer R. Scott"/>
+			<img src="/static/About_Portrait.png" alt="Spencer R. Scott"/>
 			<p>
 	          Coming Soon!
 	        </p>
