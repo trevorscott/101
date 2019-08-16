@@ -5,6 +5,7 @@ author: Spencer Scott
 date: August 3rd, 2019
 published: true
 image: /static/carbon-offsets/Carbon_Offset_website_2.png
+pdf: /static/carbon-offsets/Carbon_Offsets.pdf
 ---
 
 Ya'll know less about climate change than Jon Snow.
