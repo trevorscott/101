@@ -4,7 +4,7 @@ description: The fashion industry is a major global polluter and contributor to 
 author: Spencer Scott
 date: July 11th, 2019
 published: true
-image: /static/fashion/Fashion_4.jpf
+image: /static/fashion/Fashion.jpg
 pdf: /static/fashion/Fashion_101.pdf
 ---
 

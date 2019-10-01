@@ -4,7 +4,7 @@ description: Air travel is one of the worst things an individual can do for the 
 author: Spencer Scott
 date: August 3rd, 2019
 published: true
-image: /static/carbon-offsets/Carbon_Offset_website_2.jpf
+image: /static/carbon-offsets/CarbonOffsets.jpg
 pdf: /static/carbon-offsets/Carbon_Offsets.pdf
 ---
 
