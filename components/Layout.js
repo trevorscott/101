@@ -39,7 +39,7 @@ const Layout = props => (
         }
 
         body { 
-          font: 11px menlo;
+          font: 16px menlo;
           color: rgba(0,0,0,.9);
           text-align:center;
           width: 100%; 
