@@ -75,7 +75,7 @@ class Blog extends React.Component {
   async getAllPosts() {
     const res = await fetch(`${apiURL}/blogpost-data`)
     const blogPostData = await res.json()
-    console.log(blogPostData)
+    //console.log(blogPostData)
     this.setState({
       blogPostData:blogPostData
     }) 
